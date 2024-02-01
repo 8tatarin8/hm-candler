@@ -16,43 +16,139 @@
   <body>
     <!-- SECTION HEADER -->
     <header class="all-header">
-      <a href="#" class="logo-link">
-        <img
-          src="./images/logo/logo.png"
-          alt="logo img"
-          class="logo-img"
-          width="70"
-          height="70"
-        />
-      </a>
-      <nav class="header-nav-menu">
-        <ul class="header-menu-list">
-          <li class="header-menu-list-item">
-            <a href="#" class="header-menu-list-link">Про нас</a>
-          </li>
-          <li class="header-menu-list-item">
-            <a href="#" class="header-menu-list-link">Каталог</a>
-          </li>
-          <li class="header-menu-list-item">
-            <a href="#" class="header-menu-list-link">Команда</a>
-          </li>
-          <li class="header-menu-list-item">
-            <a href="#" class="header-menu-list-link">Відгуки</a>
-          </li>
-          <li class="header-menu-list-item">
-            <a href="#" class="header-menu-list-link">Курси</a>
-          </li>
-          <li class="header-menu-list-item">
-            <a href="#" class="header-menu-list-link">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="tel:+4565789876" class="header-tel-link">+45 65 78 98 76</a>
+      <!-- контейнер для вмісту контенту -->
+      <div class="container">
+        <a href="#" class="logo-link">
+          <img
+            src="./images/logo/logo.png"
+            alt="logo img"
+            class="logo-img"
+            width="70"
+            height="70"
+          />
+        </a>
+        <nav class="header-nav-menu">
+          <ul class="header-menu-list">
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Про нас</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Каталог</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Команда</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Відгуки</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Курси</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+4565789876" class="tel-link">+45 65 78 98 76</a>
+      </div>
     </header>
     <!-- SECTION -->
     <main class="all-main"></main>
     <!-- SECTION FOOTER -->
-    <footer class="all-footer"></footer>
+    <footer class="all-footer">
+      <div class="container">
+        <a href="#" class="logo-link">
+          <img
+            src="./images/logo/logo.png"
+            alt="logo img"
+            class="logo-img"
+            width="70"
+            height="70"
+          />
+        </a>
+        <nav class="header-nav-menu">
+          <ul class="header-menu-list">
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Про нас</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Каталог</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Команда</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Відгуки</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Курси</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a href="#" class="header-menu-list-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <!-- чи потрібно огортати контакти в тег adress???? -->
+          <address class="footer-adress">
+            <a href="tel:+4565789876" class="tel-link">+45 65 78 98 76</a>
+            <a href="mailto:candelsCandels@gmail.com" class="mail-link"
+              >candelsCandels@gmail.com</a
+            >
+          </address>
+          <ul class="footer-social-networks-list">
+            <li class="footer-social-networks-item">
+              <a href="#" class="footer-networks-link">
+                <svg
+                  class="footer-social-networks-icon"
+                  width="22"
+                  height="22"
+                  aria-label="facebook icon"
+                >
+                  <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-networks-item">
+              <a href="#" class="footer-networks-link">
+                <svg
+                  class="footer-social-networks-icon"
+                  width="22"
+                  height="22"
+                  aria-label="instagram icon"
+                >
+                  <use href="./images/svg/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-networks-item">
+              <a href="#" class="footer-networks-link">
+                <svg
+                  class="footer-social-networks-icon"
+                  width="22"
+                  height="22"
+                  aria-label="linkedin icon"
+                >
+                  <use href="./images/svg/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-networks-item">
+              <a href="#" class="footer-networks-link">
+                <svg
+                  class="footer-social-networks-icon"
+                  width="22"
+                  height="22"
+                  aria-label="youtube icon"
+                >
+                  <use href="./images/svg/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <!-- підключив файл JS -->
     <script src="./js/main.js" defer></script>
   </body>
