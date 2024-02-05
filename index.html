@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HM-CANDLER</title>
     <!-- підключив шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
     <!-- підключив modern normalize -->
     <link
       rel="stylesheet"
@@ -17,7 +29,7 @@
     <!-- SECTION HEADER -->
     <header class="all-header">
       <!-- контейнер для вмісту контенту -->
-      <div class="container">
+      <div class="container header-flex-box">
         <a href="#" class="logo-link">
           <img
             src="./images/logo/logo.png"
@@ -49,6 +61,9 @@
             </li>
           </ul>
         </nav>
+        <!-- не зрозуміло чи потрібен тег adress -->
+        <address class="page-number"></address>
+        <!-- спробувати додати зображення через sprite/svg -->
         <a href="tel:+4565789876" class="tel-link">+45 65 78 98 76</a>
       </div>
     </header>
@@ -56,7 +71,7 @@
     <main class="all-main"></main>
     <!-- SECTION FOOTER -->
     <footer class="all-footer">
-      <div class="container">
+      <div class="container footer-flex-box">
         <a href="#" class="logo-link">
           <img
             src="./images/logo/logo.png"
@@ -90,12 +105,12 @@
         </nav>
         <div class="footer-contacts">
           <!-- чи потрібно огортати контакти в тег adress???? -->
-          <address class="footer-adress">
-            <a href="tel:+4565789876" class="tel-link">+45 65 78 98 76</a>
-            <a href="mailto:candelsCandels@gmail.com" class="mail-link"
-              >candelsCandels@gmail.com</a
-            >
-          </address>
+          <address class="footer-adress"></address>
+          <a href="tel:+4565789876" class="footer-tel-link">+45 65 78 98 76</a>
+          <a href="mailto:candelsCandels@gmail.com" class="mail-link"
+            >candelsCandels@gmail.com</a
+          >
+
           <ul class="footer-social-networks-list">
             <li class="footer-social-networks-item">
               <a href="#" class="footer-networks-link">

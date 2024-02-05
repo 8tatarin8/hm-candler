@@ -3,9 +3,11 @@
 |=====|ЗАГАЛЬНІ СТИЛІ/COMMON STYLES|======|
 |=========================================|
 */
+/* стандартна штука для padding */
 html {
   box-sizing: border-box;
 }
+/* наслідування кожного елементу від батьків */
 *,
 *::after,
 *::before {
@@ -73,8 +75,12 @@ img {
 
 /* продивитись ці стилі */
 body {
-  font-family: "", sans-serif;
-  background-color: ;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+  font-style: normal;
+  line-height: 1.2;
 }
 
 /* .container {
@@ -133,8 +139,9 @@ body {
   --accent-color: ;
 
   /*fonts*/
-  --primary-font: "", sans-serif;
-  --secondary-font: "", sans-serif;
+  --font-family: "Comfortaa", sans-serif;
+  --second-family: "Yeseva One", sans-serif;
+  --third-family: "Roboto", sans-serif;
 }
 
 /*стилі для приховаих заголовків*/
