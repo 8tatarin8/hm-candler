@@ -66,8 +66,22 @@
     padding-right: 10px;
   }
   .header-menu-list-mob {
-    display: none;
+    width: 153px;
+    background-color: var(--brown);
+    color: var(--pink);
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 25px 35px 25px 45px;
+    position: absolute;
+    transform: translateY(-110%);
+    transition: transform 0.5s ease;
+    left: 0;
+    top: 0;
   }
+  .header-menu-list-mob.menu-open {
+    transform: translateY(0%);
+  }
+
   .btn-menu {
     display: flex;
   }
