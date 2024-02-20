@@ -3,6 +3,48 @@
 |=====|ЗАГАЛЬНІ СТИЛІ/COMMON STYLES|======|
 |=============================================|
 */
+/* ! стилізація SECTION починається із: Padding-Top та Padding-Buttom */
+.hero {
+  padding-bottom: 150px;
+  padding-top: 50px;
+}
+.container {
+}
+.hero-container {
+  position: relative;
+}
+.hero-content {
+  width: 390px;
+  padding: 150px 0 250px;
+}
+.hero-title {
+  font-family: var(--second-family);
+  font-size: 30px;
+  color: var(--black);
+  margin-bottom: 15px;
+}
+.hero-text {
+  font-size: 14px;
+  color: var(--black);
+  margin-bottom: 48px;
+}
+.hero-buy {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--black);
+  padding: 18px 54px;
+  background-color: var(--yellow);
+}
+/* !керуємо img за допомогою absolute(зручно для адаптива) */
+.hero-picture {
+  position: absolute;
+  top: 0;
+  left: 240px;
+}
+.hero-images {
+}
+
 /* ?================hover/focus================ */
 /* ?=========================================== */
 /*
@@ -16,8 +58,31 @@
 |============|MOBILE STYLES/HEADER|==============|
 |====================================================|
 */
+/* ==============контейнер: 480px============== */
+@media (max-width: 480px) {
+  .container {
+    min-width: 480px;
+  }
+}
+
 /* ?==============точка перелому==================== */
 /* ?================================================ */
+@media screen and (min-resolution: 192dpi) and (min-width: 480px),
+  screen and (min-resolution: 2dppx) and (min-width: 480px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 480px) {
+  /* клас де відображається картинка */
+  .hero-image {
+    background-image: url(/images/mobile/section-hero/mob-480-hero2x.png);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 360px),
+  screen and (min-resolution: 2dppx) and (min-width: 360px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 360px) {
+  /* клас де відображається картинка */
+  .hero-image {
+    background-image: url(/images/mobile/section-hero/mob-360-hero2x.png);
+  }
+}
 /*
 |========================================================|
 |============|OFF/MOBILE STYLES/HEADER|==============|
@@ -30,7 +95,81 @@
 |====================================================|
 */
 /* ?==============точка перелому==================== */
+/* ==============контейнер: 768px============== */
+@media (max-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+  /* прописав типографію */
+  body {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 640px;
+  }
+  /*!не видно картинку телефону/svg - в потоці відчувається */
+  .tel-link::before {
+    width: 14px;
+    height: 14px;
+    left: -16px;
+    top: -3px;
+    background-size: cover;
+  }
+  .hero-content {
+    width: 230px;
+  }
+  .hero-title {
+    margin-bottom: 20px;
+  }
+  .hero-text {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .hero-buy {
+    font-size: 14px;
+  }
+  .hero-picture {
+    /* перевірити правильність такогї загрузки картинки */
+    /* background-image: url(/images/tablet/section-hero/tab-768-hero1x.png); */
+    left: 180px;
+  }
+}
+/* ==============контейнер: 1000px============== */
+@media (max-width: 1000px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero-content {
+    width: 333px;
+    padding: 95px 0 70px;
+  }
+  .hero-images {
+    width: 655px;
+  }
+  .hero-picture {
+    /* перевірити правильність такогї загрузки картинки */
+    /* background-image: url(/images/tablet/section-hero/tab-1000-hero1x.png); */
+    left: 300px;
+  }
+}
 /* ?================================================ */
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  /* клас де відображається картинка */
+  .hero-image {
+    background-image: url(/images/tablet/section-hero/tab-768-hero@2x.png);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1000px),
+  screen and (min-resolution: 2dppx) and (min-width: 1000px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1000px) {
+  /* клас де відображається картинка */
+  .hero-image {
+    background-image: url(/images/tablet/section-hero/tab-1000-hero2x.png);
+  }
+}
 /*
 |========================================================|
 |============|OFF/TABLET STYLES/HEADER|==============|
@@ -42,9 +181,18 @@
 |============|DESKTOP_1280 STYLES/HEADER|==============|
 |==========================================================|
 */
+/* !приміняються стилі із ЗАГАЛЬНІ СТИЛІ/COMMON STYLES */
 /* ?==============точка перелому==================== */
 /* ?================================================ */
-/*
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  /* клас де відображається картинка */
+  .hero-image {
+    background-image: url(/images/desktop_1280/section-hero/desk-1280-hero@2x.png);
+  }
+} /*
 |===========================================================|
 |============|OFF/DESKTOP_1280 STYLES/HEADER|===========|
 |===========================================================|
@@ -57,6 +205,14 @@
 */
 /* ?==============точка перелому==================== */
 /* ?================================================ */
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  /* клас де відображається картинка */
+  .hero-image {
+    background-image: url(/images/desktop_1280/section-hero/desk-1280-hero@2x.png);
+  }
+}
 /*
 |===========================================================|
 |============|OFF/DESKTOP_1440 STYLES/HEADER|===========|

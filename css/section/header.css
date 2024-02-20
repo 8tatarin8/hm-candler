@@ -3,6 +3,8 @@
 |=====|ЗАГАЛЬНІ СТИЛІ/COMMON STYLES|======|
 |=============================================|
 */
+/* ! стилізація SECTION починається із: Padding-Top та Padding-Buttom */
+
 .all-header {
   background-color: var(--pink);
 }
@@ -104,6 +106,9 @@
 |====================================================================|
 */
 @media (max-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
   /* прописав типографію */
   body {
     font-size: 10px;

@@ -38,10 +38,7 @@ button {
   display: none;
   width: 30px;
   height: 25px;
-  border: none;
   border-color: transparent;
-  padding: 0;
-  border-radius: 0;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -98,7 +95,11 @@ body {
   font-style: normal;
   line-height: 1.2;
 }
-
+.all-main {
+  background-color: var(--pink);
+  /* !підрізаємо картинку для адаптиву */
+  overflow-x: clip;
+}
 /* .container {
   max-width: 375px;
   padding: 0px 20px;

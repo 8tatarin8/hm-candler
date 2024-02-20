@@ -3,6 +3,8 @@
 |=====|ЗАГАЛЬНІ СТИЛІ/COMMON STYLES|======|
 |=============================================|
 */
+/* ! стилізація SECTION починається із: Padding-Top та Padding-Buttom */
+
 .all-footer {
   padding-top: 40px;
   padding-bottom: 35px;
